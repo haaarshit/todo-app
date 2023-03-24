@@ -1,0 +1,87 @@
+.form{
+    width: 100%;
+    padding: 10px 0;
+    
+}
+.form form{
+    display: flex;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin: auto;
+        
+}
+.form form .todo-add-button{
+    width: 60%;
+    
+}
+.form form input{
+    border: 2px solid lightblue;
+    /* border: none; */
+    outline: none;
+    width: 70%;
+    padding: 9px;
+    font-size: 18px;
+    font-weight: 600;
+    color:gray;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+}
+.form form i{
+ 
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    color:#2DC8F3;
+    cursor: pointer;
+    background-color: white;
+    transition: 300ms;
+    margin-left: 10px;
+}
+.form form i:hover{
+ 
+    transform: rotate(360deg);
+    background-color:#2DC8F3;
+    color: white;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+}
+
+.form  .select {
+    width: 35%;
+}
+.form  .select select{
+    width: 90%;
+    padding: 9px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: white;
+    transition: 300ms;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.form  .select select option{
+    font-weight: 700;
+    width: 30%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #2DC8F3;
+    font-size: 20px;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    transition: 300ms;
+}
+.form  .select select:hover{
+    
+    background-color:#2DC8F3;
+    color: white;
+  
+}

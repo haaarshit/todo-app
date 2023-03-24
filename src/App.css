@@ -1,38 +1,56 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=IBM+Plex+Sans:wght@100;400&family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+*{
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
   text-align: center;
+ /* background-color: ;   */
+ background: linear-gradient(270deg,#2DC8F3 0,#1497E2 100%);
+ display: grid;
+ align-content: center;
+ justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App header{
+  padding: 10px;
+  color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App header h1{
+  font-size: 25px;
+  font-weight: 650;
+  color: whitesmoke;
 }
+.mainbox{
+  position: relative;
+  overflow-y:auto ;
+  border-radius: 10px;
+  width: 50vw;
+  height: 80vh;
+  background-color: white;
+   box-shadow: 7px 7px 20px rgba(0,0,0,0.3),inset  0px -10px 40px white;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.search{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+}
+.list{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar{
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width:920px) {
+  .mainbox{
+    width: 80vw;
   }
 }

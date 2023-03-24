@@ -1,0 +1,102 @@
+.todo-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo-container{
+    list-style: none;
+    width: 90%;
+
+}
+.todo-container li{
+    background-color: #0dbaea;
+   
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    width: 80%;
+    margin:5px  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 6px 10px rgba(0,0,0,0.2);
+   animation: listitem 200ms linear;
+   transition: 200ms;
+}
+@keyframes listitem {
+    0%{
+     scale: 0.2;
+    }   
+    100%{
+        scale: 1;
+
+    } 
+}
+.todo-container li:hover{
+    color: #0dbaea;;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    background-color: white;
+    box-shadow: 10px 6px 10px rgba(0,0,0,0.4);
+}
+.todo-container li p{
+   font-size: 16px;
+   width: 70%;
+   text-align: start;
+   padding-left: 10px;
+   font-weight: 670;
+}
+.todo-container li i{
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    color: #0dbaea;
+    margin: 0 10px;
+    cursor: pointer;
+   font-size: 16px;
+   font-weight: 670;
+}
+.todo-container li i:nth-child(1){
+    color: #3ad7a2;
+}
+.todo-container li i:nth-child(2){
+    color: red;
+}
+.todo-container li:hover i:nth-child(1){
+    color: white;
+    background-color: #0dbaea;
+}
+.todo-container li:hover i:nth-child(2){
+    color: white;
+    background-color: red;
+}
+
+.todo-container li i:hover{
+    animation: todo-btn 1s 1;
+}
+@keyframes todo-btn {
+    0%{opacity: 0.1;transform: rotate(0deg);}
+    100%{opacity: 1;transform: rotate(360deg);}
+    
+}
+/* Todo */
+.todo-container  .completed{
+    background-color: #3ad7a2;
+}
+.todo-container  .completed p{
+    text-decoration: line-through;
+    color: gray;
+
+}
+.todo-container  .completed:hover{
+    color:  #3ad7a2;
+   background-color: white;
+}
+.todo-container  .completed:hover i:nth-child(1){
+    color: white;
+    background-color: #3ad7a2;
+}
+.todoitem{
+    width: 100%;
+}
